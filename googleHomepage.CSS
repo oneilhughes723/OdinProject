@@ -1,0 +1,128 @@
+#main {
+  display: flex;
+  margin: -.65%;
+  height: auto;
+  width: auto;
+  font-family: arial, sans-serif;
+  text-decoration: none;
+  font-size: 13px; 
+}
+#google-logo{
+  height: auto;
+  width: auto;
+  margin: auto;
+  margin-top: 100px;
+}
+.content{
+  display: flex;
+  height: 300px;
+}
+.header {
+  display: flex;
+  height: auto;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+div {
+  display: flex;
+}
+a {
+  color: rgba(0, 0, 0, .8);
+  text-decoration: none;
+  margin: 7px;
+}
+a:hover{
+  text-decoration: underline;
+}
+.icon {
+  width: auto;
+  height: auto;
+  max-height: 20px;
+  max-width: 20px;
+}
+#user-circle {
+  background-color: navy;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  
+}
+nav {
+  display: flex;
+  height: auto;
+  width: auto;
+  padding: 10px;
+}
+
+.text-link {
+  margin-top: 18px;
+}
+.icon-link{
+  margin-top: 15px;
+}
+#search-container {
+  margin-top: 20px;
+}
+#searchbar {
+  height: 40px;
+  width: 35%;
+  margin: auto;
+  border-radius: 50px;
+  -webkit-box-shadow: 2px 3px 13px 8px #D7D7D7; 
+  box-shadow: 2px 3px 13px 2px #D7D7D7;
+  align-items: center;
+}
+
+#searchbar-search-icon {
+  margin-left: 15px;
+  color: rgba(0, 0, 0, .8);
+  margin-right: 30px;
+}
+#searchbar-text-input {
+  width: 235%;
+  border-style: none;
+  -webkit-tap-highlight-color: white;
+}
+#mic-icon-searchbar {
+  margin-left: 260px;
+}
+.search-buttons {
+  margin-top: 100px;
+  justify-content: center;
+  align-content: flex-end;
+}
+.btn {
+  background-color: #f2f2f2;
+  color: rgb(95,99,104);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: .5em;
+  margin-left: .5%;
+  margin-right: .5%;
+  border-style: solid;
+  border-width: 1px;
+}
+.btn:hover {
+  background-color: #f8f8f8;
+  border-color: #c6c6c6; 
+  border-width: 1px;
+  border-style: solid; 
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+    }
+.footer {
+  align-items: center;
+  justify-content: space-between;
+  margin: 210px -9px -2% -9px;
+  background-color: rgb(242, 242, 242);
+  height: 40px;
+  position: absolute;
+  width: 100.1%;
+}
+.footer-link {
+  color: rgb(95, 99, 104);
+}
