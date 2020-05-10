@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    let options = [ 
+    'rock',
+    'paper',
+    'scissors'
+    ];
+    
+  function computerPlay() {
+    return (options[Math.floor(Math.random() * options.length)]);
+  };
+    
+  function userPlay() {
+    let playerSelection = prompt('rock, paper or scissors?')
+    if (playerSelection != null || playerSelection != '') {
+      playerSelection = playerSelection.toLowerCase()
+      let responseValid = options.includes(playerSelection);
+      return responseValid ? playerSelection : userplay();
+     }
+    else {
+      userPlay();
+    }
+  };
+
+  function playRound(playerSelection, computerSelection) {
+    let roundMessage;
+if (playerSelection == 'rock') {
+  roundMessage = (computerSelection == 'rock') ? "It's a wash!" : 
+ (computerSelection == 'paper') ? "You lose! Paper beats Rock!" :
+ (computerSelection == 'scissors') ? "You win! Rock beats Scissors!": "invalid user response entered"
+}
+else if (playerSelection == 'paper') {
+  roundMessage = (computerSelection == 'rock') ? "You win! Paper beats Rock!" :
+  (computerSelection == 'paper') ? "It's a wash!" : 
+  (computerSelection == 'scissors') ? "You lose! Scissors beat Paper!" : "invalid user response entered"
+  }
+else {
+  roundMessage = (computerSelection == 'rock') ? "You lose! Rock beats Scissors" :
+  (computerSelection == 'paper') ? "You win! Scissors beat Paper!" :
+  (computerSelection == 'scissors') ? "It's a wash!": "invalid user response entered"
+  }
+  return (roundMessage);
+}
+
+function game() {
+  let roundMessage;
+  for (let i = 0; i < 5; i++) {
+    let playerSelection = userPlay();
+    let computerSelection = computerPlay();
+    roundMessage = playRound(playerSelection, computerSelection);
+    console.log(roundMessage);
+  }
+  
+}
+    
+
+  </script>
+  <body>
+    <button onclick='game()'> Play Game </button>
+  </body>
+</html>
